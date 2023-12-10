@@ -20,7 +20,7 @@ class LVM(object):
     
     def solution(self):
         a = 0
-        b = 40
+        b = 1000
         N = 1000
         h = (b-a)/N
         self.time = np.linspace(a, b, N+1)
