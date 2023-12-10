@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 class LVM(object):
-    def init(self, alpha, beta, gamma, delta, x0, y0):
+    def __init__(self, alpha, beta, gamma, delta, x0, y0):
         self.alpha = alpha
         self.beta = beta
         self.gamma = gamma
@@ -20,7 +20,7 @@ class LVM(object):
     
     def solution(self): # Решение уравнения
         a = 0
-        b = 1000
+        b = 40
         N = 1000
         h = (b-a)/N
         self.time = np.linspace(a, b, N+1)
